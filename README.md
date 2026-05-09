@@ -87,36 +87,10 @@ Administrators can:
 | Area | Technology |
 |---|---|
 | Frontend | Microsoft Power Apps Canvas App |
-| Backend | Microsoft Lists / SharePoint Lists |
+| Backend | SharePoint Lists |
 | App Logic | Power Fx |
 | Testing | Power Apps Test Studio |
 | Performance Evaluation | Power Apps Monitor |
 | Documentation | Confluence |
 | Source Control | GitHub |
 | Source Export | Power Platform CLI |
-
----
-
-## Data Backend
-
-The app uses three main Microsoft Lists as the backend.
-
-### Incidents List
-
-The `Incidents` list stores emergency reports submitted by residents.
-
-Main fields:
-
-- `IncidentID`
-- `Types`
-- `Location`
-- `Priority`
-- `Notes`
-- `Status`
-- `AssignedVolunteer`
-- `CreatedTime`
-
-Incident status lifecycle:
-
-```text
-New → Assigned → Resolved
